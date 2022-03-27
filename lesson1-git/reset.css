@@ -14,7 +14,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -40,3 +39,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	/* отображаем курсор в виде руки при наведении; некоторые
+	считают, что необходимо оставлять стрелочный вид для кнопок */
+	cursor: pointer;
+  }

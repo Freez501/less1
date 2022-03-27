@@ -5,178 +5,197 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-
-        <img src="img/logo.svg" alt="logo">
-        <img src="img/search.svg" alt="lupa">
-        <ul>
-            <li>
-                <button><img src="img/burger.svg" alt="burger"></button>
-            </li>
-            <li>
-                <a href="#"><img src="img/peson.svg" alt="peson"></a>
-            </li>
-            <li>
-                <a href="#"><img src="img/basket.svg" alt=""></a>
-            </li>
-        </ul>
-        <nav>
-            <h2>menu</h2>
-            <ul></ul>
-            <li>
-                <h3>man</h3>
-                <ul>
-                    <li>accessories</li>
-                    <li>bags</li>
-                    <li>denim</li>
-                    <li>t-shirts</li>
-                </ul>
-            </li>
-            <li>
-                <h3>woman</h3>
-                <ul>
-                    <li>accessories</li>
-                    <li>bags</li>
-                    <li>denim</li>
-                    <li>t-shirts</li>
-                    <li>t-shirts</li>
-                </ul>
-            </li>
-            <li>
-                <h3>kids</h3>
-                <ul>
-                    <li>accessories</li>
-                    <li>bags</li>
-                    <li>denim</li>
-                    <li>t-shirts</li>
-                    <li>t-shirts</li>
-                    <li>t-shirts</li>
-                </ul>
-            </li>
-        </nav>
+    <header class="header">
+        <div class="container header__wrp">
+            <div class="header__container">
+                <img class="header__logo" src="img/logo.svg" alt="logo">
+                <img class="header__search-icon" src="img/search.svg" alt="lupa">
+            </div>
+            <ul class="header__menu-list">
+                <li>
+                    <button class="header__burger"><img class="header__burger-icon" src="img/burger.svg" alt="burger"></button>
+                </li>
+                <li>
+                    <a class="header__link" href="#"><img class="header__person-icon" src="img/peson.svg" alt="person"></a>
+                </li>
+                <li>
+                <a class="header__link" href="#"><img class="header__basket-icon" src="img/basket.svg" alt=""></a>
+                </li>
+            </ul>
+            <nav class="header__nav">
+                <h2 class="header__nav-title">menu</h2>
+                <ul class="header__nav-list">
+                <li class="header__nav-item nav-item">
+                    <h3 class="nav-item__title">man</h3>
+                    <ul class="nav-item__list">
+                        <li class="nav-item__item">accessories</li>
+                        <li class="nav-item__item">bags</li>
+                        <li class="nav-item__item">denim</li>
+                        <li class="nav-item__item">t-shirts</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>woman</h3>
+                    <ul>
+                        <li>accessories</li>
+                        <li>bags</li>
+                        <li>denim</li>
+                        <li>t-shirts</li>
+                        <li>t-shirts</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>kids</h3>
+                    <ul>
+                        <li>accessories</li>
+                        <li>bags</li>
+                        <li>denim</li>
+                        <li>t-shirts</li>
+                        <li>t-shirts</li>
+                        <li>t-shirts</li>
+                    </ul>
+                </li>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
-            <img src="img/main-man.png" alt="man">
-            <h1>the brand of luxerious fashion</h1>
+        <section class="brand">
+            <img class="brand__img" src="img/main-man.png" alt="man">
+            <div class="brand__title-wrp">
+                <h1 class="brand__title">the brand</h1>
+                <p class="brand__title-text">of luxerious <span class="brand__title-text-color">fashion</span></p>
+            </div>
         </section>
-        <section>
-            <h2>sales</h2>
-            <ul>
-                <li>
-                    <p>30% off </p>
-                    <h3>for women</h3>
-                </li>
-                <li>
-                    <p>30% off </p>
-                    <h3>for women</h3>
-                </li>
-                <li>
-                    <p>30% off </p>
-                    <h3>for women</h3>
-                </li>
-                <li>
-                    <p>30% off </p>
-                    <h3>for women</h3>
-                </li>
-            </ul>
+        <section class="sales">
+            <h2 class="visually-hidden">sales</h2>
+            <div class="container">
+                <ul class="sales__list">
+                    <li class="sales__card sales__card--woman">
+                        <p class="sales__text">30% off </p>
+                        <h3 class="sales__title">for women</h3>
+                    </li>
+                    <li class="sales__card sales__card--man">
+                        <p class="sales__text">hot deal</p>
+                        <h3 class="sales__title">for man</h3>
+                    </li>
+                    <li class="sales__card sales__card--kid">
+                        <p class="sales__text">new arrivals</p>
+                        <h3 class="sales__title">for kids</h3>
+                    </li>
+                    <li class="sales__card sales__card--acces">
+                        <p class="sales__text">luxirous & trendy</p>
+                        <h3 class="sales__title">accesories</h3>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>fetured items</h2>
-            <p>fetured items</p>
-            <ul>
-                <li> 
-                    <img src="img/card1.png" alt="card">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="img/card2.jpeg" alt="card2">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="img/card3.jpeg" alt="card">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="img/card4.jpeg" alt="card2">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="img/card5.jpeg" alt="card2">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
-                    <p>$52.00</p>
-                </li>
-                <li>
-                    <img src="img/card6.jpeg" alt="card2">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>known for her sculptural takes on traditional tailoring, australian arbiter of cool kym ellery teams up with moda operandi.</p>
-                    <p>$52.00</p>
-                </li>
-            </ul>
-            <button>browse all product</button>
+        <section class="products">
+            <div class="container products__wrp">
+                <h2 class="products__title">Fetured Items</h2>
+                <p class="products__sub-title">Shop for items based on what we featured in this week</p>
+                <ul class="products__cardbox">
+                    <li class="products__card">
+                        <img class="products__card-img" src="img/card1.png" alt="card">
+                        <h3 class="products__card-title">ellery x m'o capsule</h3>
+                        <p class="products__card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__card-price">$52.00</p>
+                    </li>
+                    <li class="products__card">
+                        <img class="products__card-img" src="img/card2.jpeg" alt="card">
+                        <h3 class="products__card-title">ellery x m'o capsule</h3>
+                        <p class="products__card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__card-price">$52.00</p>
+                    </li>
+                    <li class="products__card">
+                        <img class="products__card-img" src="img/card3.jpeg" alt="card">
+                        <h3 class="products__card-title">ellery x m'o capsule</h3>
+                        <p class="products__card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__card-price">$52.00</p>
+                    </li>
+                    <li class="products__card">
+                        <img class="products__card-img" src="img/card4.jpeg" alt="card">
+                        <h3 class="products__card-title">ellery x m'o capsule</h3>
+                        <p class="products__card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__card-price">$52.00</p>
+                    </li>
+                    <li class="products__card">
+                        <img class="products__card-img" src="img/card5.jpeg" alt="card">
+                        <h3 class="products__card-title">ellery x m'o capsule</h3>
+                        <p class="products__card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__card-price">$52.00</p>
+                    </li>
+                    <li class="products__card">
+                        <img class="products__card-img" src="img/card6.jpeg" alt="card">
+                        <h3 class="products__card-title">ellery x m'o capsule</h3>
+                        <p class="products__card-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="products__card-price">$52.00</p>
+                    </li>
+                </ul>
+                <button class="products__button">Browse All Product</button>
+            </div>
         </section>
-        <section>
-            <h2>advantage</h2>
-            <ul>
-                <li>
-                    <img src="img/car.svg" alt="car">
-                    <h3>free delivery</h3>
-                    <p>worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.
-                    </p>                    
-                </li>
-                <li>
-                    <img src="img/sale.png" alt="sale">
-                    <h3>sales & discounts</h3>
-                    <p>worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.
-                    </p>  
-                </li>
-                <li>
-                    <img src="img/crown.svg" alt="crown">
-                    <h3>quality assurance</h3>
-                    <p>worldwide delivery on all. authorit tively morph next-generation innov tion with extensive models.
-                    </p>  
-                </li>
-            </ul>
+        <section class="advantage">
+            <h2 class="visually-hidden">advantage</h2>
+            <div class="container">
+                <ul class="advantage__list">
+                    <li class="advantage__item">
+                        <img class="advantage__img advantage__img--car" src="img/car.svg" alt="car">
+                        <h3 class="advantage__title">free delivery</h3>
+                        <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                        </p>                    
+                    </li>
+                    <li class="advantage__item">
+                        <img class="advantage__img" src="img/sale.png" alt="sale">
+                        <h3 class="advantage__title">Sales & discounts</h3>
+                        <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                        </p>  
+                    </li>
+                    <li class="advantage__item">
+                        <img class="advantage__img advantage__img--crown" src="img/crown.svg" alt="crown">
+                        <h3 class="advantage__title">Quality assurance</h3>
+                        <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                        </p>  
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <section>
-            <h2>it's footer top</h2>
-            <aside>
-                <img src="img/photo-logo.png" alt="photo">
-                <p>“vestibulum quis porttitor dui! quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-            </aside>
-            <div class="form">
-                <h3>subscribe</h3>
-                <p>for our newletter and promotion</p>
-                <form action="#">
+        <section class="footer__top">
+            <div class="container footer__top-wrp">
+                <h2 class="visually-hidden">it's footer top</h2>
+                <aside class="footer__top-comment">
+                    <img class="footer__top-img" src="img/photo-logo.png" alt="photo">
+                    <p class="footer__top-text">“vestibulum quis porttitor dui! quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </aside>
+                <div class="form">
+                    <h3 class="form__title">subscribe</h3>
+                    <p class="form__text">for our newletter and promotion</p>
+                    <form action="#">
                     <input type="email" name="" placeholder="enter your email">
                     <input type="submit" name="" placeholder="" value="subscribe">
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>it's footer bottom</h2>
-            <h3>новый</h3>
-            <p>© 2022  brand  all rights reserved.</p>
-            <ul>
-                <li><a href="#"><img src="img/faccebook.svg" alt="facebook"></a></li>
-                <li><a href="#"><img src="img/inst.svg" alt="inst"></a></li>
-                <li><a href="#"><img src="img/pint.svg" alt="pint"></a></li>
-                <li><a href="#"><img src="img/twit.svg" alt="twit"></a></li>
+        <section class="footer__bottom">
+            <div class="container footer__bottom-wrp">
+                <h2 class="visually-hidden">it's footer bottom</h2>
+                <p class="footer__bottom-text">© 2022  brand  all rights reserved.</p>
+                <ul class="footer__bottom-social">
+                    <li class="footer__bottom-icon"><a href="#"><img src="img/faccebook.svg" alt="facebook"></a></li>
+                    <li class="footer__bottom-icon"><a href="#"><img src="img/inst.svg" alt="inst"></a></li>
+                    <li class="footer__bottom-icon"><a href="#"><img src="img/pint.svg" alt="pint"></a></li>
+                    <li class="footer__bottom-icon"><a href="#"><img src="img/twit.svg" alt="twit"></a></li>
             </ul>
+            </div>
         </section>
     </footer>
 </body>

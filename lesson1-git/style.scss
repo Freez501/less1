@@ -1,0 +1,352 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #222222;
+    
+    &__wrp{
+        display: flex;
+        min-height: 75px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        margin-right: 41px;
+    }
+    
+    &__menu-list{
+        display: flex;
+        align-items: center;
+    }
+
+    &__burger{
+        background-color: transparent;
+        border: none;
+    }
+
+    &__link{
+        margin-left: 34px;
+    }
+
+    &__nav{
+        display: none;
+    }
+}
+
+.brand{
+    display: flex;
+    margin-bottom: 20px;
+
+    &__img{
+        width: 800px;
+        height: 765px;
+    }
+
+    &__title-wrp{
+        flex-grow: 1;
+        background-color: #F1E4E6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 91px;
+        box-sizing: border-box;
+    }
+
+    &__title{
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #222222;
+        text-transform: uppercase;
+    }
+
+    &__title-text{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+    }
+
+    &__title-text-color{
+        color: #F16D7F;
+    }
+}
+
+.sales{
+    margin-bottom: 91px;
+
+    .sales__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .sales__card{
+            width: 360px;
+            height: 260px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .sales__card--woman{
+            background-image: url(img/for-women.jpeg);
+        }
+
+        .sales__card--man{
+            background-image: url(img/for-man.jpeg);
+        }
+
+        .sales__card--kid{
+            background-image: url(img/for-kid.jpeg);
+        }
+
+        .sales__card--acces{
+            background-image: url(img/accesosries.png);
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        .sales__text{
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+        .sales__title{
+            weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center; 
+            color: #F16D7F; 
+            text-transform: uppercase;
+        }
+
+
+    }
+}
+
+.products{
+    margin-bottom: 95px;
+
+    &__wrp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+    }
+
+    &__sub-title{
+        color: #9F9F9F;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__cardbox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        background: #F8F8F8;
+        margin-bottom: 30px;
+    }
+
+    &__card-img{
+        margin-bottom: 25px;
+    }
+
+    &__card-title{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 13px;
+        text-transform: uppercase;
+        margin-left: 18px;
+    }
+
+    &__card-text{
+        color: #5D5D5D;
+        font-weight: 300;
+        margin-bottom: 18px;
+        margin-left: 18px;
+    }
+
+    &__card-price{
+        color: #F16D7F;
+        margin-left: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__button{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        border: 1px solid #F26376;
+        padding: 14px 39px;
+    }
+}
+
+.advantage{
+    background-color: #222224;
+    padding: 103px 0;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        margin-bottom: 20px;
+    }
+
+    &__img--car{
+        margin-bottom: 28px;
+    }
+
+    &__img--crown{
+        margin-bottom: 25px;
+    }
+
+    &__title{
+        font-size: 20px;
+        line-height: 24px;
+        color: #FBFBFB;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__text{
+        color: #FBFBFB;
+        text-align: center;
+        font-weight: 300;
+    }
+}
+
+.footer__top{
+    background-image: url(img/bcg-footer.jpeg); 
+    min-height: 448px;
+    display: flex;
+
+    .footer__top-wrp{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer__top-comment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+    }
+
+    .footer__top-img{
+        width: 96px;
+        margin-bottom: 30px;
+    }
+
+    .footer__top-text{
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form__title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+        color: #222224;
+        text-transform: uppercase;
+    }
+
+    .form__text{
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+
+.footer__bottom{
+    background-color: #222224;
+
+    .footer__bottom-wrp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 71px;
+    
+        .footer__bottom-text{
+            font-size: 16px;
+            line-height: 19px;
+            color: #FBFBFB;
+        }
+    
+        .footer__bottom-social{
+            display: flex;
+        }
+
+        .footer__bottom-icon{
+            margin-right: 7px;
+        }
+    }
+}
+
