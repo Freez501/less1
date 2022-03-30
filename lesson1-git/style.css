@@ -46,6 +46,15 @@ body {
   margin-right: 41px;
 }
 
+.header__search {
+  background-color: transparent;
+  border: none;
+}
+
+.header__icon {
+  fill: #E8E8E8;
+}
+
 .header__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,11 +62,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header__burger {
-  background-color: transparent;
-  border: none;
 }
 
 .header__link {
@@ -181,7 +185,7 @@ body {
 }
 
 .sales .sales__list .sales__title {
-  weight: 700;
+  font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
@@ -241,6 +245,20 @@ body {
   width: 360px;
   background: #F8F8F8;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.products__card::before {
+  content: '';
+  width: 100%;
+  min-height: 420px;
+  background-color: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  display: none;
+}
+
+.products__card:hover::before {
+  display: block;
 }
 
 .products__card-img {
@@ -276,6 +294,43 @@ body {
   color: #F26376;
   border: 1px solid #F26376;
   padding: 14px 39px;
+}
+
+.products__button:hover {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #F26376;
+  color: #FFFFFF;
+  border: 1px solid #F26376;
+  padding: 14px 39px;
+}
+
+.products__card-button {
+  padding: 9px 13px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  position: absolute;
+  top: 33%;
+  left: 30%;
+  display: none;
+}
+
+.products__card:hover .products__card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__card-basket {
+  width: 25px;
+  margin-right: 11px;
 }
 
 .advantage {
@@ -442,5 +497,29 @@ body {
 
 .footer__bottom .footer__bottom-wrp .footer__bottom-icon {
   margin-right: 7px;
+}
+
+.footer__bottom .footer__bottom-wrp .footer__bottom-icon {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.footer__bottom .footer__bottom-wrp .footer__bottom-icon:hover {
+  background-color: #F16D7F;
+}
+
+.footer__bottom .footer__bottom-wrp .social-icon {
+  fill: black;
+}
+
+.footer__bottom .footer__bottom-wrp .social-icon:hover {
+  fill: white;
+}
+
+.hover__button:hover .hover__icon,
+.hover__button:focus .hover__icon,
+.hover__button:active .hover__icon {
+  fill: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */

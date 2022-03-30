@@ -37,16 +37,22 @@ body{
     &__logo{
         margin-right: 41px;
     }
-    
+
+    &__search{
+        background-color: transparent;
+        border: none;
+    }
+
+    &__icon{
+        fill: #E8E8E8;
+    }
+
     &__menu-list{
         display: flex;
         align-items: center;
     }
 
-    &__burger{
-        background-color: transparent;
-        border: none;
-    }
+    
 
     &__link{
         margin-left: 34px;
@@ -141,7 +147,7 @@ body{
             text-transform: uppercase;
         }
         .sales__title{
-            weight: 700;
+            font-weight: 700;
             font-size: 24px;
             line-height: 29px;
             text-align: center; 
@@ -187,6 +193,19 @@ body{
         width: 360px;
         background: #F8F8F8;
         margin-bottom: 30px;
+        position: relative;
+    }
+    &__card::before{
+        content: '';
+        width: 100%;
+        min-height: 420px;
+        background-color: rgba(58, 56, 56, 0.86);
+        position: absolute;
+        display: none;
+    }
+
+    &__card:hover::before{
+        display: block;
     }
 
     &__card-img{
@@ -223,7 +242,41 @@ body{
         border: 1px solid #F26376;
         padding: 14px 39px;
     }
+
+    &__button:hover{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        background-color: #F26376;
+        color: #FFFFFF;
+        border: 1px solid #F26376;
+        padding: 14px 39px;
+    }
+
+    &__card-button{
+        padding: 9px 13px;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        position: absolute;
+        top: 33%;  
+        left: 30%;
+        display: none;
+    }
+
+    &__card:hover .products__card-button{
+        display: flex;
+        align-items: center;
+    }
+
+    &__card-basket{
+        width: 25px;
+        margin-right: 11px;
+    }
 }
+
 
 .advantage{
     background-color: #222224;
@@ -347,6 +400,30 @@ body{
         .footer__bottom-icon{
             margin-right: 7px;
         }
+
+        .footer__bottom-icon{
+            background-color: white;
+            width: 32px;
+            height: 32px;
+        }
+        .footer__bottom-icon:hover{
+            background-color: #F16D7F;
+        }
+
+        .social-icon{
+            fill: black; 
+        }
+
+        .social-icon:hover{
+            fill: white; 
+        }
+
+
     }
 }
 
+.hover__button:hover .hover__icon, 
+.hover__button:focus .hover__icon,
+.hover__button:active .hover__icon{
+    fill: #F16D7F;
+}
