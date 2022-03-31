@@ -58,6 +58,26 @@ body{
         margin-left: 34px;
     }
 
+    &__link--basket{
+        position: relative;
+    }
+
+    &__bassket-amount{
+        position: absolute;
+        border: 1px solid #F16D7F;
+        border-radius: 50%;
+        width: 19px;
+        height: 19px;
+        background-color: #F16D7F;
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        top: -22px;
+        left: 25px;
+    }
+
     &__nav{
         display: none;
     }
@@ -82,6 +102,7 @@ body{
         box-sizing: border-box;
     }
 
+
     &__title{
         font-weight: 900;
         font-size: 48px;
@@ -99,6 +120,11 @@ body{
 
     &__title-text-color{
         color: #F16D7F;
+    }
+
+    &__title-border{
+        border-left: 12px solid #F16D7F;
+        padding-left: 16px;
     }
 }
 
@@ -426,4 +452,135 @@ body{
 .hover__button:focus .hover__icon,
 .hover__button:active .hover__icon{
     fill: #F16D7F;
+}
+
+.reg{
+    margin-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+
+    &__wrp{
+        background: #F8F3F4;
+        padding: 60px 0;
+        margin-bottom: 64px;
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+
+}
+.form{
+
+    &__reg{
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    &__view{
+    width: 100%;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 21px;
+    padding: 14px 17px;
+    color:#B1B1B1;   
+    }
+
+    &__title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 21px;
+    width: 100%;
+    }
+
+    &__radiobox{
+        margin-top: 10px;
+        margin-bottom: 33px;
+    }
+
+    &__radiobox-wrp{
+        display: flex;
+        align-items: center;
+    }
+
+    &__radio{
+        border: 1px solid #B1B1B1;
+        width: 17px;
+        height: 17px;
+        margin: 0;
+    }
+
+    &__radio-text{
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    &__text{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-bottom: 39px;
+    }
+
+    &__button{
+        padding: 16px 29px;
+    }
+
+    &__button:hover{
+        padding: 16px 29px;
+    }
+
+    &__button-arrow{
+        fill: #F16D7F;
+        margin-left: 20px;
+    }
+
+    &__button:hover .form__button-arrow{
+        fill: #FFFFFF;
+    }
+}
+
+.reg__adv{
+    width: 652px;
+
+    .adv__title{
+        margin-bottom: 21px;
+    }
+
+    .adv__title--up{
+        text-transform: uppercase;
+    }
+
+    .adv__text{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .adv__item{
+        position: relative;
+        margin-left: 43px;
+        margin-bottom: 16px;
+    }
+    
+
+    .adv__item::before{
+        content: "";
+        background-image: url(img/Vector.svg);
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        top: 9px;
+        left: -43px;
+    }
+
 }

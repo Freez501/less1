@@ -68,6 +68,26 @@ body {
   margin-left: 34px;
 }
 
+.header__link--basket {
+  position: relative;
+}
+
+.header__bassket-amount {
+  position: absolute;
+  border: 1px solid #F16D7F;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  background-color: #F16D7F;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  top: -22px;
+  left: 25px;
+}
+
 .header__nav {
   display: none;
 }
@@ -121,6 +141,11 @@ body {
 
 .brand__title-text-color {
   color: #F16D7F;
+}
+
+.brand__title-border {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
 }
 
 .sales {
@@ -521,5 +546,143 @@ body {
 .hover__button:focus .hover__icon,
 .hover__button:active .hover__icon {
   fill: #F16D7F;
+}
+
+.reg {
+  margin-bottom: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reg__wrp {
+  background: #F8F3F4;
+  padding: 60px 0;
+  margin-bottom: 64px;
+}
+
+.reg__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.form__reg {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__view {
+  width: 100%;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+  padding: 14px 17px;
+  color: #B1B1B1;
+}
+
+.form__title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 21px;
+  width: 100%;
+}
+
+.form__radiobox {
+  margin-top: 10px;
+  margin-bottom: 33px;
+}
+
+.form__radiobox-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__radio {
+  border: 1px solid #B1B1B1;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+}
+
+.form__radio-text {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.form__text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-bottom: 39px;
+}
+
+.form__button {
+  padding: 16px 29px;
+}
+
+.form__button:hover {
+  padding: 16px 29px;
+}
+
+.form__button-arrow {
+  fill: #F16D7F;
+  margin-left: 20px;
+}
+
+.form__button:hover .form__button-arrow {
+  fill: #FFFFFF;
+}
+
+.reg__adv {
+  width: 652px;
+}
+
+.reg__adv .adv__title {
+  margin-bottom: 21px;
+}
+
+.reg__adv .adv__title--up {
+  text-transform: uppercase;
+}
+
+.reg__adv .adv__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.reg__adv .adv__item {
+  position: relative;
+  margin-left: 43px;
+  margin-bottom: 16px;
+}
+
+.reg__adv .adv__item::before {
+  content: "";
+  background-image: url(img/Vector.svg);
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: 9px;
+  left: -43px;
 }
 /*# sourceMappingURL=style.css.map */
