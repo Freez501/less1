@@ -4,6 +4,8 @@ body{
     line-height: 17px;
     font-style: normal;
     font-weight: 400;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -34,6 +36,13 @@ body{
         justify-content: space-between;
     }
 
+    &__container{
+        position: relative; 
+    }
+    
+    &__nav{
+        display: none;
+    }
     &__logo{
         margin-right: 41px;
     }
@@ -51,8 +60,6 @@ body{
         display: flex;
         align-items: center;
     }
-
-    
 
     &__link{
         margin-left: 34px;
@@ -78,9 +85,7 @@ body{
         left: 25px;
     }
 
-    &__nav{
-        display: none;
-    }
+    
 }
 
 .brand{
@@ -279,6 +284,10 @@ body{
         padding: 14px 39px;
     }
 
+    &__button:focus{
+        outline: 1px solid #F26376; 
+    }
+
     &__card-button{
         padding: 9px 13px;
         border: 1px solid #FFFFFF;
@@ -302,7 +311,6 @@ body{
         margin-right: 11px;
     }
 }
-
 
 .advantage{
     background-color: #222224;
@@ -379,28 +387,64 @@ body{
         color: #222224;
     }
 
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .form__title{
+    .footer__form-wrp{
+        display: flex;
+        flex-direction: column;
+    
+    .footer__form-title{
         font-weight: 700;
         font-size: 24px;
         line-height: 38px;
         text-align: center;
         color: #222224;
         text-transform: uppercase;
-    }
-
-    .form__text{
+        }
+    
+    .footer__form-text{
         font-size: 18px;
         line-height: 30px;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 32px;
+        }
+    }
+
+    .footer__form{
+        position: relative;
+    }
+    .footer__form-email{
+        padding: 17px 22px;
+        border-radius: 25px 0 0 25px;
+        background-color: #E1E1E1;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        width: 256px;
+        box-sizing: border-box;
+    }
+
+    .footer__form-email:hover,
+    .footer__form-email:focus {
+        outline: 1px solid #F16D7F;
+        cursor: pointer;
+        padding: 16.5px 22px;
+    }
+
+    .footer__form-email::placeholder{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .footer__form-button{
+        border-radius: 0px 25px 25px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 16px 19px;
+        position: absolute;
     }
 }
 
@@ -444,14 +488,7 @@ body{
             fill: white; 
         }
 
-
     }
-}
-
-.hover__button:hover .hover__icon, 
-.hover__button:focus .hover__icon,
-.hover__button:active .hover__icon{
-    fill: #F16D7F;
 }
 
 .reg{
@@ -498,10 +535,38 @@ body{
     width: 100%;
     }
 
+    &__view{
+        color: #F26376;
+        box-sizing: border-box;
+    }
+
+    &__view:hover{
+        border: 1px solid #F26376;
+    }
+
+    &__view:focus{
+        outline: 1px solid #F26376;
+        border: none;
+
+    }
+
+    &__view::placeholder{
+        color: #B1B1B1;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+    }
+
+    &__view:focus::placeholder{
+        text-indent: 500px; 
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
     &__radiobox{
         margin-top: 10px;
         margin-bottom: 33px;
     }
+
 
     &__radiobox-wrp{
         display: flex;
@@ -509,19 +574,56 @@ body{
     }
 
     &__radio{
-        border: 1px solid #B1B1B1;
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__radio + .form__radio-text{
+        position: relative;
+        cursor: pointer;
+        padding: 0 0 0 35px;
+    }
+
+    &__radio + .form__radio-text:before{
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: 0;
         width: 17px;
         height: 17px;
-        margin: 0;
+        border: 1px solid #A4A4A4;
+        border-radius: 50%;
+        background: #FFF;
     }
+
+    &__radio + .form__radio-text:after{
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 2px;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        background: #F16D7F;;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    &__radio:checked + .form__radio-text:after {
+        opacity: 1;
+        top: -1px;
+        left: 2px;
+        width: 15px;
+        height: 15px;
+    }
+
 
     &__radio-text{
         font-weight: 300;
         font-size: 11px;
         line-height: 13px;
         color: #000000;
-        margin-right: 20px;
-        margin-left: 10px;
+        margin-right: 20px; 
     }
 
     &__text{
@@ -548,6 +650,8 @@ body{
     &__button:hover .form__button-arrow{
         fill: #FFFFFF;
     }
+
+
 }
 
 .reg__adv{
@@ -583,4 +687,10 @@ body{
         left: -43px;
     }
 
+}
+
+.hover__button:hover .hover__icon, 
+.hover__button:focus .hover__icon,
+.hover__button:active .hover__icon{
+    fill: #F16D7F;
 }
