@@ -29,6 +29,7 @@ body {
 
 .header {
   background-color: #222222;
+  position: relative;
 }
 
 .header__wrp {
@@ -48,8 +49,59 @@ body {
   position: relative;
 }
 
+.header__burger:hover + .header__nav,
+.header__burger:focus + .header__nav {
+  display: block;
+}
+
 .header__nav {
   display: none;
+  position: absolute;
+  width: 232px;
+  min-height: 765px;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.5);
+  top: 75px;
+  right: 0px;
+  padding: 37px 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__nav-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.header .nav-item__list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.header .nav-item__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header .nav-item__item {
+  margin-bottom: 11px;
+}
+
+.header .nav-item__link {
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.header .nav-item__link:hover {
+  color: #F26376;
 }
 
 .header__logo {
